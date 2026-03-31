@@ -4,7 +4,7 @@ Purna Travels Hub is a React + Vite travel website with a Supabase-backed admin 
 
 ## Live Demo
 
-- https://YOUR_LIVE_URL
+- [https://YOUR_LIVE_URL](https://www.purnatourandtravel.com/)
 
 ## Tech Stack
 
