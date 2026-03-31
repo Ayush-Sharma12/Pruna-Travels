@@ -2,6 +2,10 @@
 
 Purna Travels Hub is a React + Vite travel website with a Supabase-backed admin panel. Admin users can manage destinations, tour packages, package media, blog posts, blog images/videos, and customer enquiries from the dashboard.
 
+## Live Demo
+
+- https://YOUR_LIVE_URL
+
 ## Tech Stack
 
 - React 18
