@@ -28,25 +28,27 @@ Purna Travels Hub is a React + Vite travel website with a Supabase-backed admin 
 
 ```mermaid
 flowchart LR
-  U[User Browser] -->|HTTP| V[Vite + React SPA]
+  U["User browser"] -->|HTTP| V["Vite + React SPA"]
 
-  subgraph App[Frontend (src/)]
-    R[React Router Pages]
-    C[UI Components (shadcn/ui)]
-    H[Hooks (useAuth/useDatabase)]
-    S[Supabase Client]
+  V --> R
+
+  subgraph Frontend["Frontend (src/)"]
+    R["React Router pages"]
+    C["UI components (shadcn/ui)"]
+    H["Hooks (useAuth / useDatabase)"]
+    S["Supabase client"]
+
     R --> C
     R --> H
     H --> S
   end
 
-  V --> App
-
-  subgraph SB[Supabase]
-    A[Auth]
+  subgraph Supabase["Supabase"]
+    A["Auth"]
     DB[(Postgres + RLS)]
-    ST[Storage Buckets]
-    RPC[RPC: claim_admin_access]
+    ST["Storage buckets"]
+    RPC["RPC: claim_admin_access()"]
+
     A --> DB
     RPC --> DB
   end
