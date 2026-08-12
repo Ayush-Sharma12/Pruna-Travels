@@ -79,9 +79,19 @@ export default function Footer() {
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex items-center justify-between text-sm text-primary-foreground/40">
           <span>&copy; {new Date().getFullYear()} Purna Travels. All rights reserved.</span>
-          <Link to={adminHref} className="hover:text-primary-foreground/60 transition-colors">
-            {isAdmin ? "Dashboard" : "Admin Portal"}
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link to={adminHref} className="hover:text-primary-foreground/60 transition-colors">
+              {isAdmin ? "Dashboard" : "Admin Portal"}
+            </Link>
+            <a
+              href="https://www.linkedin.com/in/ayush-sharma-7175a1267/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
+            >
+              Developed by Ayush Sharma
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -142,3 +142,7 @@ After the first admin account is created, you can deactivate the code by setting
 npm run build
 npm run preview
 ```
+
+---
+
+Developed by Ayush Sharma — https://www.linkedin.com/in/ayush-sharma-7175a1267/

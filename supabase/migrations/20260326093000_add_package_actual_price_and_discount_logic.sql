@@ -8,7 +8,7 @@ WHERE actual_price IS NULL;
 ALTER TABLE public.packages
 ALTER COLUMN actual_price SET NOT NULL;
 
-DO $$
+DO $$`
 BEGIN
   IF NOT EXISTS (
     SELECT 1
